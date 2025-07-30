@@ -9,7 +9,7 @@ return {
     window = {
       layout = "vertical",   -- Side panel layout
       side = "left",     -- 💡 Left side of the screen
-      width = 0.3,          -- 💡 30% of the editor width
+      width = 0.40,          -- 💡 40% of the editor width
       relative = "editor",   -- Required for layout
     },
   },
