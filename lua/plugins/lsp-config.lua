@@ -17,6 +17,7 @@ return {
           "clangd",
           "rust_analyzer",
           "gopls",
+          "pyright",
         }
       })
     end,
@@ -49,6 +50,10 @@ return {
       })
       -- Java LSP
       lspconfig.jdtls.setup({
+        capabilities = capabilities,
+      })
+      -- Python LSP
+      lspconfig.pyright.setup({
         capabilities = capabilities,
       })
       -- 🔍 Useful keymaps
