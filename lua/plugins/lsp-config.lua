@@ -18,6 +18,9 @@ return {
           "rust_analyzer",
           "gopls",
           "pyright",
+          "ts_ls",
+          "html",
+          "cssls"
         }
       })
     end,
@@ -54,6 +57,18 @@ return {
       })
       -- Python LSP
       lspconfig.pyright.setup({
+        capabilities = capabilities,
+      })
+      -- Javascript/Typescript LSP
+      lspconfig.ts_ls.setup({
+        capabilities = capabilities,
+      })
+      -- Html LSP
+      lspconfig.html.setup({
+        capabilities = capabilities,
+      })
+      -- CSS LSP
+      lspconfig.html.setup({
         capabilities = capabilities,
       })
       -- 🔍 Useful keymaps
